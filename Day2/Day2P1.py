@@ -16,3 +16,4 @@ while input!='':
     totalScore+=getScore(input)
     input=inputFile.readline() 
 print(totalScore)
+inputFile.close()

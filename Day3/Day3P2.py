@@ -36,3 +36,4 @@ while input!='':
     sumOfPriorities+=getPrio(getCommonLetter(input, input2, input3))
     input=inputFile.readline() 
 print(sumOfPriorities)
+inputFile.close()
