@@ -1,4 +1,5 @@
 #sleepy af sorry if my code is more garbage than usual
+import re
 def isIntervalOneWithinTheSecond(a,b,x,y):
     if a<=x and b>=y:
         return True
@@ -9,13 +10,11 @@ input=inputFile.readline()
 partOneOutput=0
 partTwoOutput=0
 while input!='':
-    intervals=input.split(',')
-    interval1=intervals[0].split('-')
-    interval2=intervals[1].split('-')
-    a=int(interval1[0])
-    b=int(interval1[1])
-    x=int(interval2[0])
-    y=int(interval2[1])
+    intervals=re.split(r',|-',input)
+    a=int(intervals[0])
+    b=int(intervals[1])
+    x=int(intervals[2])
+    y=int(intervals[3])
     if isIntervalOneWithinTheSecond(a,b,x,y):
         partOneOutput+=1
         partTwoOutput+=1
