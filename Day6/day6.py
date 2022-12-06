@@ -2,7 +2,6 @@ inputFile = open("Day6/Input.txt", "r")
 input=inputFile.readline()
 inputFile.close()
 i=0
-j=0
 read=""
 foundPart1=False
 while True:
