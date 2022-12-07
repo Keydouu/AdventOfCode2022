@@ -32,11 +32,11 @@ fun main(){
     }
     var total:Long=0
     var directoryToDelete=mainDirectory
-    var requiredSpace=(30000000+mainDirectory.size-70000000)
+    var requiredSpace=(30_000_000+mainDirectory.size-70_000_000)
     println("required space : "+requiredSpace)
     for(entry in allDirectories){
         if(entry.type=="dir"){
-            if ((entry.size <= 100000))
+            if ((entry.size <= 100_000))
                 total+=entry.size
             if((entry.size>requiredSpace)and(entry.size<directoryToDelete.size))
                 directoryToDelete=entry
