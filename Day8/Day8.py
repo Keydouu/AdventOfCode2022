@@ -45,5 +45,5 @@ for i in range(maxH):
             total+=1
         if newMax>max:
             max=newMax
-print(total)
-print(max)
+print("part one : "+str(total))
+print("part two : "+str(max))
